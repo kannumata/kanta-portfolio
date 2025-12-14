@@ -78,7 +78,12 @@ export default function Career() {
                         <div className="relative">
                             <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-stone-400 shadow-sm"></span>
                             <div className="mb-2 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                                <h3 className="text-2xl font-bold text-stone-900">Amazon Web Services Japan</h3>
+                                <div className="flex items-center gap-3">
+                                    <h3 className="text-2xl font-bold text-stone-900">Amazon Web Services Japan</h3>
+                                    <Link href="https://aws.amazon.com/jp/" target="_blank" className="text-stone-400 hover:text-emerald-600 transition-colors">
+                                        <ExternalLink className="h-4 w-4" />
+                                    </Link>
+                                </div>
                                 <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">{t.career.aws.role}</span>
                             </div>
                             <p className="text-stone-700 leading-relaxed mb-4">
