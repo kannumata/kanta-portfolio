@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kanta Numa Portfolio
 
-## Getting Started
+Kanta Numa のポートフォリオサイトです。
+Next.js 14, TypeScript, Tailwind CSS を使用して構築されています。
 
-First, run the development server:
+## プロジェクト概要
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+BtoBビジネスグロースパートナーとしての経歴、スキル、価値観を紹介する個人ウェブサイトです。
+多言語対応（日本語/英語）しており、国内外の閲覧者を想定しています。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Live Site:** https://kanta-portfolio.vercel.app/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 機能・特徴
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **レスポンシブデザイン**: スマートフォンからデスクトップまで最適化された表示。
+*   **多言語対応**: 日本語と英語の切り替え機能（Context APIを使用）。
+*   **アニメーション**: Framer Motionを使用したスムーズなスクロールアニメーションとインタラクション。
+*   **コンポーネント指向**: 再利用可能なUIコンポーネント設計。
+*   **資格リスト**: アコーディオン形式で展開可能な資格一覧。
+*   **トップへ戻るボタン**: スクロール時に表示されるスムーズな移動ボタン。
 
-## Learn More
+## 技術スタック
 
-To learn more about Next.js, take a look at the following resources:
+*   **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+*   **Language**: [TypeScript](https://www.typescriptlang.org/)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Animation**: [Framer Motion](https://www.framer.com/motion/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Deployment**: [Vercel](https://vercel.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ローカル開発環境のセットアップ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **リポジトリのクローン**
+    ```bash
+    git clone https://github.com/kannumata/kanta-portfolio.git
+    cd kanta-portfolio
+    ```
 
-## Deploy on Vercel
+2.  **依存関係のインストール**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  **開発サーバーの起動**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4.  **ブラウザで確認**
+    [http://localhost:3000](http://localhost:3000) (または表示されたポート) にアクセスしてください。
+
+## ライセンス
+
+[MIT](https://choosealicense.com/licenses/mit/)
