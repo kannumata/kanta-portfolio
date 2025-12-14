@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #fafaf9;
+  /* stone-50: 温かみのある白 */
+  --foreground: #1c1917;
+  /* stone-900: 柔らかい黒 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0c0a09;
+    /* stone-950 */
+    --foreground: #fafaf9;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* スムーズスクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ユーティリティ */
+.container-custom {
+  @apply max-w-5xl mx-auto px-6 md:px-12;
+}
+
+.section-padding {
+  @apply py-20 md:py-32;
+}
