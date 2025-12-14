@@ -1,36 +1,41 @@
+"use client";
+
 import { Dumbbell, Globe, Trophy, Trees } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Hobbies() {
+    const { t } = useLanguage();
+
     return (
         <section id="hobbies" className="py-20 md:py-32 bg-white">
             <div className="max-w-5xl mx-auto px-6 md:px-12">
                 <FadeIn>
-                    <h2 className="text-sm font-bold uppercase tracking-wider text-stone-400 mb-12">Hobbies & Interests</h2>
+                    <h2 className="text-sm font-bold uppercase tracking-wider text-stone-400 mb-12">{t.hobbies.title}</h2>
                     <div className="grid md:grid-cols-2 gap-6">
 
                         <HobbyCard
                             icon={<Trees className="h-6 w-6 text-emerald-600" />}
-                            title="Golf"
-                            description="ベストスコア96。週末は自然の中でリフレッシュしながら、戦略的なプレーを楽しんでいます。"
+                            title={t.hobbies.golf.title}
+                            description={t.hobbies.golf.description}
                         />
 
                         <HobbyCard
                             icon={<Trophy className="h-6 w-6 text-yellow-500" />}
-                            title="Hanshin Tigers"
-                            description="兵庫県西宮市出身なので、幼少期から応援しています。熱狂的な阪神ファンです。"
+                            title={t.hobbies.tigers.title}
+                            description={t.hobbies.tigers.description}
                         />
 
                         <HobbyCard
                             icon={<Dumbbell className="h-6 w-6 text-blue-500" />}
-                            title="Workout"
-                            description="無理しない範囲でトレーニングやストレッチに取り組み、心身をメンテナンスしています。"
+                            title={t.hobbies.workout.title}
+                            description={t.hobbies.workout.description}
                         />
 
                         <HobbyCard
                             icon={<Globe className="h-6 w-6 text-sky-500" />}
-                            title="Travel"
-                            description="海外旅行で異文化に触れることが好きです。旅行を通じて新しい視点やインスピレーションを得ています。"
+                            title={t.hobbies.travel.title}
+                            description={t.hobbies.travel.description}
                         />
 
                     </div>

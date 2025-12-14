@@ -1,13 +1,18 @@
+"use client";
+
 import { ExternalLink } from "lucide-react";
-import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Career() {
+    const { t } = useLanguage();
+
     return (
         <section id="career" className="py-20 md:py-32 bg-white">
             <div className="max-w-5xl mx-auto px-6 md:px-12">
                 <FadeIn>
-                    <h2 className="text-sm font-bold uppercase tracking-wider text-stone-400 mb-8">Career</h2>
+                    <h2 className="text-sm font-bold uppercase tracking-wider text-stone-400 mb-8">{t.career.title}</h2>
                     <div className="border-l-2 border-stone-200 pl-8 ml-4 md:ml-0 space-y-12">
 
                         {/* CloudFit */}
@@ -20,17 +25,17 @@ export default function Career() {
                                         <ExternalLink className="h-4 w-4" />
                                     </Link>
                                 </div>
-                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">2024.06 - Current (1y 6m)</span>
+                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">{t.career.cloudfit.role}</span>
                             </div>
                             <p className="text-stone-700 leading-relaxed mb-4">
-                                大手企業やSaaS企業のクライアントに向けて、インサイドセールス・マーケティング・営業プロセス改善・データ活用・セールステックの導入/運用支援など、事業グロース領域に従事。
+                                {t.career.cloudfit.description}
                             </p>
                             <div className="flex flex-wrap gap-4 text-sm">
                                 <Link href="https://note.com/cloudfit/n/nb45bf5b0d174" target="_blank" className="flex items-center gap-1 text-emerald-600 hover:text-emerald-800 hover:underline transition-colors font-medium">
-                                    入社エントリ <ExternalLink className="h-3 w-3" />
+                                    {t.career.cloudfit.entry_link} <ExternalLink className="h-3 w-3" />
                                 </Link>
                                 <Link href="https://cloudfit.co.jp/blog/writers/kanta-numa" target="_blank" className="flex items-center gap-1 text-emerald-600 hover:text-emerald-800 hover:underline transition-colors font-medium">
-                                    執筆した記事一覧 <ExternalLink className="h-3 w-3" />
+                                    {t.career.cloudfit.articles_link} <ExternalLink className="h-3 w-3" />
                                 </Link>
                             </div>
                         </div>
@@ -45,10 +50,10 @@ export default function Career() {
                                         <ExternalLink className="h-4 w-4" />
                                     </Link>
                                 </div>
-                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">2023.06 - Current (2y 6m)</span>
+                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">{t.career.company3ma.role}</span>
                             </div>
                             <p className="text-stone-700 leading-relaxed mb-4">
-                                株式会社3MAを創業。主にSaaS/AI企業向けに営業代行・コンサルティングサービスを提供。営業戦略策定からインサイドセールス代行、組織構築支援までワンストップで支援。
+                                {t.career.company3ma.description}
                             </p>
                         </div>
 
@@ -57,14 +62,14 @@ export default function Career() {
                             <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-stone-400 shadow-sm"></span>
                             <div className="mb-2 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                                 <h3 className="text-xl font-bold text-stone-900">Side Projects</h3>
-                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">Side Business</span>
+                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">{t.career.side_projects.role}</span>
                             </div>
                             <p className="text-stone-700 leading-relaxed mb-4">
-                                「決算が読めるようになるノート」での企業分析記事の企画・執筆（ビジネスモデル構造化・戦略分析）に加え、新規ITサービスの企画・開発におけるPdM/PMも経験。
+                                {t.career.side_projects.description}
                             </p>
                             <div className="flex flex-wrap gap-4 text-sm">
                                 <Link href="https://note.com/kannumata/m/mdd75b23ee567" target="_blank" className="flex items-center gap-1 text-stone-500 hover:text-stone-800 hover:underline transition-colors font-medium">
-                                    企画・執筆した記事はこちら <ExternalLink className="h-3 w-3" />
+                                    {t.career.side_projects.note_link} <ExternalLink className="h-3 w-3" />
                                 </Link>
                             </div>
                         </div>
@@ -73,21 +78,13 @@ export default function Career() {
                         <div className="relative">
                             <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-stone-400 shadow-sm"></span>
                             <div className="mb-2 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                                <div className="flex items-center gap-3">
-                                    <h3 className="text-2xl font-bold text-stone-900">Amazon Web Services Japan</h3>
-                                    <Link href="https://aws.amazon.com/jp/" target="_blank" className="text-stone-400 hover:text-emerald-600 transition-colors">
-                                        <ExternalLink className="h-4 w-4" />
-                                    </Link>
-                                </div>
-                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">2021.04 - 2024.05 (New Graduate)</span>
+                                <h3 className="text-2xl font-bold text-stone-900">Amazon Web Services Japan</h3>
+                                <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full w-fit">{t.career.aws.role}</span>
                             </div>
                             <p className="text-stone-700 leading-relaxed mb-4">
-                                Telecom、SMB、ISV、Startupなど幅広い業界・顧客層を対象に、BDR/SDRとしてインサイドセールスや新規開拓営業を経験。<br />
-                                架電・メールに加え、LinkedIn Sales Navigatorや手紙を活用したCxOアプローチを実践。また、インテントデータを活用したセールスDXプロジェクトを担当し、セールステック・AIツールの導入推進も行う。
+                                {t.career.aws.description}
                             </p>
                         </div>
-
-
 
                     </div>
                 </FadeIn>

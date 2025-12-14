@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section className="pt-32 pb-20 md:pt-48 md:pb-32 max-w-5xl mx-auto px-6 md:px-12">
             <FadeIn>
@@ -13,11 +18,11 @@ export default function Hero() {
                             Kanta Numa
                         </h1>
                         <p className="text-xl text-stone-600 font-medium">
-                            BtoB Business Growth Partner
+                            {t.hero.role}
                         </p>
                         <p className="text-base text-stone-600 leading-relaxed max-w-lg">
-                            株式会社CloudFitにて、BtoBマーケティング・インサイドセールス・AI・セールステックを用いた成果創出を支援しています。<br />
-                            Sales × Marketing × Technology を武器に、現場レベルの実装から経営視点の支援まで一気通貫で伴走します。
+                            {t.hero.description1}<br />
+                            {t.hero.description2}
                         </p>
 
                         <div className="pt-6 flex gap-4">

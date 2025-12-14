@@ -1,12 +1,17 @@
+"use client";
+
 import { TrendingUp, Heart, RefreshCw, Target } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Values() {
+    const { t } = useLanguage();
+
     return (
         <section id="values" className="pt-8 pb-20 md:pt-12 md:pb-32 bg-stone-50">
             <div className="max-w-5xl mx-auto px-6 md:px-12">
                 <FadeIn>
-                    <h2 className="text-sm font-bold uppercase tracking-wider text-stone-400 mb-12">Values</h2>
+                    <h2 className="text-sm font-bold uppercase tracking-wider text-stone-400 mb-12">{t.values.title}</h2>
                     <div className="grid md:grid-cols-2 gap-6">
 
                         {/* Data Driven */}
@@ -16,14 +21,14 @@ export default function Values() {
                                     <TrendingUp size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold leading-tight mb-1">Data Driven</h3>
+                                    <h3 className="text-xl font-bold leading-tight mb-1">{t.values.data_driven.title}</h3>
                                     <div className="text-sm font-bold text-stone-900">
-                                        事実とデータに基づく意思決定
+                                        {t.values.data_driven.subtitle}
                                     </div>
                                 </div>
                             </div>
                             <p className="text-stone-600 text-sm leading-relaxed">
-                                感覚論ではなく、データというファクトを共通言語に。再現性のある戦略で、不確実なビジネス環境を確かな一歩へと導きます。
+                                {t.values.data_driven.description}
                             </p>
                         </div>
 
@@ -34,14 +39,14 @@ export default function Values() {
                                     <Heart size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold leading-tight mb-1">Enjoy the Process</h3>
+                                    <h3 className="text-xl font-bold leading-tight mb-1">{t.values.enjoy_process.title}</h3>
                                     <div className="text-sm font-bold text-stone-900">
-                                        構築のプロセスに、熱狂を。
+                                        {t.values.enjoy_process.subtitle}
                                     </div>
                                 </div>
                             </div>
                             <p className="text-stone-600 text-sm leading-relaxed">
-                                困難な課題や、0から1を作り上げる泥臭いプロセスこそに最大のワクワクを。結果だけでなく、そこに至る試行錯誤の道のりそのものを大切にします。
+                                {t.values.enjoy_process.description}
                             </p>
                         </div>
 
@@ -52,14 +57,14 @@ export default function Values() {
                                     <RefreshCw size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold leading-tight mb-1">Update & Adapt</h3>
+                                    <h3 className="text-xl font-bold leading-tight mb-1">{t.values.update_adapt.title}</h3>
                                     <div className="text-sm font-bold text-stone-900">
-                                        変化を楽しみ、自らを変え続ける
+                                        {t.values.update_adapt.subtitle}
                                     </div>
                                 </div>
                             </div>
                             <p className="text-stone-600 text-sm leading-relaxed">
-                                市場の変化を恐れず、常に最新の知見をキャッチアップ。固定観念にとらわれない柔軟なスタンスで、チームと共に成長し続けます。
+                                {t.values.update_adapt.description}
                             </p>
                         </div>
 
@@ -70,14 +75,14 @@ export default function Values() {
                                     <Target size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold leading-tight mb-1">Commitment</h3>
+                                    <h3 className="text-xl font-bold leading-tight mb-1">{t.values.commitment.title}</h3>
                                     <div className="text-sm font-bold text-stone-900">
-                                        「支援」ではなく「成果」にこだわる
+                                        {t.values.commitment.subtitle}
                                     </div>
                                 </div>
                             </div>
                             <p className="text-stone-600 text-sm leading-relaxed">
-                                外部パートナーという立ち位置に甘んじず、クライアントと同じ視座で事業成長（グロース）にコミットします。
+                                {t.values.commitment.description}
                             </p>
                         </div>
 
