@@ -1,6 +1,6 @@
 "use client";
 
-import { Dumbbell, Globe, Trophy, Trees } from "lucide-react";
+import { Dumbbell, Globe, Trees } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -21,7 +21,7 @@ export default function Hobbies() {
                         />
 
                         <HobbyCard
-                            icon={<Trophy className="h-6 w-6 text-yellow-500" />}
+                            icon={<BaseballIcon className="h-6 w-6 text-yellow-500" />}
                             title={t.hobbies.tigers.title}
                             description={t.hobbies.tigers.description}
                         />
@@ -56,5 +56,26 @@ function HobbyCard({ icon, title, description }: { icon: React.ReactNode, title:
                 <p className="text-sm text-stone-600 leading-relaxed">{description}</p>
             </div>
         </div>
+    )
+}
+
+function BaseballIcon(props: React.SVGProps<SVGSVGElement>) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M6.5 4a12 12 0 0 1 0 16" />
+            <path d="M17.5 4a12 12 0 0 0 0 16" />
+        </svg>
     )
 }
