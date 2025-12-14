@@ -60,10 +60,11 @@ export const locales = {
             ops: {
                 title: 'Ops',
                 items: [
-                    'BigQueryを活用したデータ加工・抽出',
+                    'SFA（例：Salesforce）の設計・運用',
+                    'MA（例：Account Engagement）の設定・運用',
+                    'データ基盤(例：BigQuery)を活用したデータ加工・抽出',
                     'データ基盤構築・可視化',
                     'セールステック／AIツールの導入・活用支援',
-                    'Account Engagement (Pardot) の設定・運用',
                     '業務プロセス改善・業務整理',
                 ],
             },
@@ -189,10 +190,11 @@ export const locales = {
             ops: {
                 title: 'Ops',
                 items: [
-                    'Data processing & extraction using BigQuery',
+                    'SFA (e.g. Salesforce) design & operation',
+                    'MA (e.g. Account Engagement) configuration & operation',
+                    'Data processing & extraction using Data Platform (e.g. BigQuery)',
                     'Data infrastructure construction & visualization',
                     'Implementation & utilization support of SalesTech/AI tools',
-                    'Account Engagement (Pardot) configuration & operation',
                     'Business process improvement & organization',
                 ],
             },
