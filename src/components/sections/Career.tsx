@@ -20,7 +20,7 @@ export default function Career() {
                             <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-emerald-500 shadow-sm"></span>
                             <div className="mb-2 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                                 <div className="flex items-center gap-3">
-                                    <h3 className="text-2xl font-bold text-stone-900">株式会社CloudFit</h3>
+                                    <h3 className="text-2xl font-bold text-stone-900">{t.career.cloudfit.name}</h3>
                                     <Link href="https://cloudfit.co.jp/" target="_blank" className="text-stone-400 hover:text-emerald-600 transition-colors">
                                         <ExternalLink className="h-4 w-4" />
                                     </Link>
@@ -45,7 +45,7 @@ export default function Career() {
                             <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-emerald-500 shadow-sm"></span>
                             <div className="mb-2 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                                 <div className="flex items-center gap-3">
-                                    <h3 className="text-2xl font-bold text-stone-900">株式会社3MA</h3>
+                                    <h3 className="text-2xl font-bold text-stone-900">{t.career.company3ma.name}</h3>
                                     <Link href="https://3majp.com/" target="_blank" className="text-stone-400 hover:text-emerald-600 transition-colors">
                                         <ExternalLink className="h-4 w-4" />
                                     </Link>
@@ -79,7 +79,7 @@ export default function Career() {
                             <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-stone-400 shadow-sm"></span>
                             <div className="mb-2 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                                 <div className="flex items-center gap-3">
-                                    <h3 className="text-2xl font-bold text-stone-900">Amazon Web Services Japan</h3>
+                                    <h3 className="text-2xl font-bold text-stone-900">{t.career.aws.name}</h3>
                                     <Link href="https://aws.amazon.com/jp/" target="_blank" className="text-stone-400 hover:text-emerald-600 transition-colors">
                                         <ExternalLink className="h-4 w-4" />
                                     </Link>

@@ -46,7 +46,6 @@ export default function Hero() {
                     </div>
 
                     <div className="relative w-64 h-64 md:w-80 md:h-80 shrink-0">
-                        <div className="absolute inset-0 bg-emerald-100 rounded-full blur-3xl opacity-30 animate-pulse"></div>
                         <Image
                             src="/images/profile.jpg"
                             alt="Kanta Numamata"

@@ -16,13 +16,15 @@ export const locales = {
         career: {
             title: 'Career',
             cloudfit: {
-                role: '2024.06 - Current (1y 6m)',
+                name: '株式会社CloudFit',
+                role: '2024.06 - Current',
                 description: '大手企業やSaaS企業のクライアントに向けて、インサイドセールス・マーケティング・営業プロセス改善・データ活用・セールステックの導入/運用支援など、事業グロース領域に従事。',
                 entry_link: '入社エントリ',
                 articles_link: '執筆した記事一覧',
             },
             company3ma: {
-                role: '2023.06 - Current (2y 6m)',
+                name: '株式会社3MA',
+                role: '2023.06 - Current',
                 description: '株式会社3MAを創業。主にSaaS/AI企業向けに営業代行・コンサルティングサービスを提供。営業戦略策定からインサイドセールス代行、組織構築支援までワンストップで支援。',
             },
             side_projects: {
@@ -31,6 +33,7 @@ export const locales = {
                 note_link: '企画・執筆した記事はこちら',
             },
             aws: {
+                name: 'Amazon Web Services Japan',
                 role: '2021.04 - 2024.05 (New Graduate)',
                 description: 'Telecom、SMB、ISV、Startupなど幅広い業界・顧客層を対象に、BDR/SDRとしてインサイドセールスや新規開拓営業を経験。架電・メールに加え、LinkedIn Sales Navigatorや手紙を活用したCxOアプローチを実践。また、インテントデータを活用したセールスDXプロジェクトを担当し、セールステック・AIツールの導入推進も行う。',
             },
@@ -38,33 +41,28 @@ export const locales = {
         skills: {
             title: 'Skills',
             sales: {
-                title: 'Inside Sales / Sales',
+                title: 'Sales',
                 items: [
-                    '架電・メールによる新規／既存顧客開拓',
-                    'Salesforceを活用した営業KPIマネジメント',
+                    '架電・メール・LinkedIn・手紙を活用したマルチチャネル新規開拓',
+                    'Salesforce等を活用した営業KPIマネジメント',
                     'SPIN話法を使ったコンサルティング型営業',
-                    'Linkedin Sales Navigatorや手紙を活用したCxOアプローチ',
                     '大手企業における部署・子会社別攻略のABM推進',
                 ],
             },
             marketing: {
                 title: 'Marketing',
                 items: [
-                    'BtoBマーケティング戦略設計',
-                    '広告運用ディレクション',
-                    'LP構成案作成・改善（LPO）',
-                    'SEO施策のマネジメント',
-                    'コンテンツマーケティング（記事・WP）',
+                    'BtoBマーケティング戦略の立案・KGI/KPI設計',
+                    'セミナー・コンテンツマーケティング・メールマーケティングの企画・実行',
+                    'MAツール（Account Engagement）・セールステックの導入・運用・改善',
                 ],
             },
-            ops: {
-                title: 'Ops',
+            technology: {
+                title: 'Technology',
                 items: [
-                    'SFA（例：Salesforce）の設計・運用',
-                    'MA（例：Account Engagement）の設定・運用',
-                    'データ基盤(例：BigQuery)を活用したデータ加工・抽出',
-                    'セールステック／AIツールの導入・活用支援',
-                    '業務プロセス改善・業務整理',
+                    'BigQuery / Dataform / SQLによるデータ基盤構築・パイプライン開発',
+                    'Looker Studioによるダッシュボード設計・施策効果の可視化',
+                    '生成AI（Claude Code等）・ワークフロー自動化ツール（n8n）を活用した業務効率化',
                 ],
             },
         },
@@ -125,9 +123,9 @@ export const locales = {
             },
         },
         contact: {
-            title: "Let's Talk",
-            description: 'お仕事のご相談、カジュアルなお話、お気軽にメッセージをお送りください。',
-            copyright: '© 2025 Kanta Numa. All rights reserved.',
+            title: 'お問い合わせ',
+            description: 'お仕事のご相談やお問い合わせなど、お気軽にご連絡ください。',
+            copyright: '© 2026 Kanta Numa. All rights reserved.',
         },
     },
     en: {
@@ -145,13 +143,15 @@ export const locales = {
         career: {
             title: 'Career',
             cloudfit: {
-                role: '2024.06 - Current (1y 6m)',
+                name: 'CloudFit Inc.',
+                role: '2024.06 - Current',
                 description: 'Engaged in business growth areas for major enterprises and SaaS clients, including inside sales, marketing, sales process improvement, data utilization, and SalesTech implementation/operation support.',
                 entry_link: 'Entry Story',
                 articles_link: 'Articles',
             },
             company3ma: {
-                role: '2023.06 - Current (2y 6m)',
+                name: '3MA Inc.',
+                role: '2023.06 - Current',
                 description: 'Founded 3MA Inc. Provide sales outsourcing and consulting services mainly for SaaS/AI companies. One-stop support from sales strategy formulation to inside sales outsourcing and organizational development.',
             },
             side_projects: {
@@ -160,6 +160,7 @@ export const locales = {
                 note_link: 'Planned/Written Articles',
             },
             aws: {
+                name: 'Amazon Web Services Japan',
                 role: '2021.04 - 2024.05 (New Graduate)',
                 description: 'Experienced inside sales and new business development as BDR/SDR for a wide range of industries and customers including Telecom, SMB, ISV, and Startups. Practiced CxO approach using LinkedIn Sales Navigator and letters in addition to calls and emails. Also in charge of sales DX projects utilizing intent data and promoted implementation of SalesTech and AI tools.',
             },
@@ -167,33 +168,28 @@ export const locales = {
         skills: {
             title: 'Skills',
             sales: {
-                title: 'Inside Sales / Sales',
+                title: 'Sales',
                 items: [
-                    'New/Existing customer development via call & email',
+                    'Multi-channel prospecting via calls, email, LinkedIn & letters',
                     'Sales KPI management using Salesforce',
-                    'Consultative sales using SPIN method',
-                    'CxO approach using LinkedIn Sales Navigator & Letters',
-                    'ABM promotion for departments/subsidiaries of major companies',
+                    'Consultative sales using SPIN methodology',
+                    'ABM strategy for enterprise departments & subsidiaries',
                 ],
             },
             marketing: {
                 title: 'Marketing',
                 items: [
-                    'BtoB marketing strategy design',
-                    'Ad operation direction',
-                    'LP structure creation and improvement (LPO)',
-                    'SEO management',
-                    'Content marketing (Articles/WP)',
+                    'BtoB marketing strategy & KGI/KPI design',
+                    'Planning & execution of seminars, content marketing & email marketing',
+                    'MA tool (Account Engagement) & SalesTech implementation & optimization',
                 ],
             },
-            ops: {
-                title: 'Ops',
+            technology: {
+                title: 'Technology',
                 items: [
-                    'SFA (e.g. Salesforce) design & operation',
-                    'MA (e.g. Account Engagement) configuration & operation',
-                    'Data processing & extraction using Data Platform (e.g. BigQuery)',
-                    'Implementation & utilization support of SalesTech/AI tools',
-                    'Business process improvement & organization',
+                    'Data platform development with BigQuery / Dataform / SQL',
+                    'Dashboard design & performance visualization with Looker Studio',
+                    'Business automation with generative AI (Claude Code) & workflow tools (n8n)',
                 ],
             },
         },
@@ -254,9 +250,9 @@ export const locales = {
             },
         },
         contact: {
-            title: "Let's Talk",
-            description: 'Please feel free to send a message for work consultation or casual talk.',
-            copyright: '© 2025 Kanta Numa. All rights reserved.',
+            title: 'Contact',
+            description: 'Feel free to reach out for work inquiries or just to say hello.',
+            copyright: '© 2026 Kanta Numa. All rights reserved.',
         },
     },
 };
