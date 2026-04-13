@@ -69,6 +69,7 @@ export const locales = {
         certifications: {
             title: 'Certifications',
             items: [
+                { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: '2026.08' },
                 { name: 'Google Ads Search Certification', date: '2024.11' },
                 { name: 'Google Analytics Certification', date: '2024.11' },
                 { name: 'Salesforce Certified Sales Cloud Consultant', date: '2024.10' },
@@ -196,6 +197,7 @@ export const locales = {
         certifications: {
             title: 'Certifications',
             items: [
+                { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: 'Aug 2026' },
                 { name: 'Google Ads Search Certification', date: 'Nov 2024' },
                 { name: 'Google Analytics Certification', date: 'Nov 2024' },
                 { name: 'Salesforce Certified Sales Cloud Consultant', date: 'Oct 2024' },
