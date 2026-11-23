@@ -69,11 +69,11 @@ export const locales = {
         certifications: {
             title: 'Certifications',
             items: [
-                { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: '2026.08' },
                 { name: 'Google Cloud Associate Data Practitioner', date: '2026.04' },
                 { name: 'Google Ads Search Certification', date: '2024.11' },
                 { name: 'Google Analytics Certification', date: '2024.11' },
                 { name: 'Salesforce Certified Sales Cloud Consultant', date: '2024.10' },
+                { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: '2024.09' },
                 { name: 'Salesforce Certified Associate', date: '2024.09' },
                 { name: 'Salesforce Certified AI Associate', date: '2024.09' },
                 { name: 'Salesforce Certified Administrator', date: '2024.08' },
@@ -198,11 +198,11 @@ export const locales = {
         certifications: {
             title: 'Certifications',
             items: [
-                { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: 'Aug 2026' },
                 { name: 'Google Cloud Associate Data Practitioner', date: 'Apr 2026' },
                 { name: 'Google Ads Search Certification', date: 'Nov 2024' },
                 { name: 'Google Analytics Certification', date: 'Nov 2024' },
                 { name: 'Salesforce Certified Sales Cloud Consultant', date: 'Oct 2024' },
+                { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: 'Sep 2024' },
                 { name: 'Salesforce Certified Associate', date: 'Sep 2024' },
                 { name: 'Salesforce Certified AI Associate', date: 'Sep 2024' },
                 { name: 'Salesforce Certified Administrator', date: 'Aug 2024' },
