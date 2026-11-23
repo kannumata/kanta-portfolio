@@ -70,6 +70,7 @@ export const locales = {
             title: 'Certifications',
             items: [
                 { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: '2026.08' },
+                { name: 'Google Cloud Associate Data Practitioner', date: '2026.04' },
                 { name: 'Google Ads Search Certification', date: '2024.11' },
                 { name: 'Google Analytics Certification', date: '2024.11' },
                 { name: 'Salesforce Certified Sales Cloud Consultant', date: '2024.10' },
@@ -108,7 +109,7 @@ export const locales = {
             title: 'Hobbies & Interests',
             golf: {
                 title: 'Golf',
-                description: 'ベストスコア96。週末は自然の中でリフレッシュしながら、戦略的なプレーを楽しんでいます。',
+                description: 'ベストスコア94。週末は自然の中でリフレッシュしながら、戦略的なプレーを楽しんでいます。',
             },
             tigers: {
                 title: 'Hanshin Tigers',
@@ -198,6 +199,7 @@ export const locales = {
             title: 'Certifications',
             items: [
                 { name: 'Salesforce Certified Marketing Cloud Account Engagement Specialist', date: 'Aug 2026' },
+                { name: 'Google Cloud Associate Data Practitioner', date: 'Apr 2026' },
                 { name: 'Google Ads Search Certification', date: 'Nov 2024' },
                 { name: 'Google Analytics Certification', date: 'Nov 2024' },
                 { name: 'Salesforce Certified Sales Cloud Consultant', date: 'Oct 2024' },
@@ -236,7 +238,7 @@ export const locales = {
             title: 'Hobbies & Interests',
             golf: {
                 title: 'Golf',
-                description: 'Best score 96. I enjoy strategic play while refreshing myself in nature on weekends.',
+                description: 'Best score 94. I enjoy strategic play while refreshing myself in nature on weekends.',
             },
             tigers: {
                 title: 'Hanshin Tigers',
